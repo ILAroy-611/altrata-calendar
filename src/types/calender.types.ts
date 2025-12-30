@@ -5,6 +5,8 @@ export interface CalendarHeaderProps {
 }
 
 export interface DateCellProps {
-  day: number;
+  day: number | string;
   isHighlighted: boolean;
 }
+
+export type WeekDayName = 'Su' | 'Mo' | 'Tu' | 'We' | 'Th' | 'Fr' | 'Sa';

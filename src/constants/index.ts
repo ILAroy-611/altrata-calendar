@@ -1,3 +1,5 @@
+import { WeekDayName } from '../types/calender.types';
+
 export const MONTHS_LIST = [
   'January',
   'February',
@@ -12,3 +14,5 @@ export const MONTHS_LIST = [
   'November',
   'December',
 ];
+
+export const WEEKDAYNAME_LIST: WeekDayName[] = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'];
