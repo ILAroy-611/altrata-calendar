@@ -6,7 +6,7 @@ import {
   isDateStringValid,
   parseDateString,
 } from '../../utils';
-import CalendarHeader from './CalenderHeader';
+import CalendarHeader from './CalendarHeader';
 import DateCell from './DateCell';
 import Weekdays from './Weekdays';
 

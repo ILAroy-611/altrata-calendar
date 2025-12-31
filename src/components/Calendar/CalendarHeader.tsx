@@ -7,9 +7,9 @@ const CalendarHeader: React.FC<CalendarHeaderProps> = ({
 }: CalendarHeaderProps) => {
   return (
     <div className="p-2 m-4">
-      <div className={`text-2xl font-bold text-gray-600 ${className}`}>
+      <h2 className={`text-2xl font-bold text-gray-600 ${className}`}>
         {month} {year}
-      </div>
+      </h2>
     </div>
   );
 };
