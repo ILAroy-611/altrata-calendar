@@ -15,6 +15,7 @@ const DateCell: React.FC<DateCellProps> = ({
   return (
     <div className="p-2 m-1">
       <div
+        data-testid="date-cell"
         className={`
           ${getCellBackgroundColor()}
           p-1 text-lg w-16 h-16 
