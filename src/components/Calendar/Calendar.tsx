@@ -24,8 +24,14 @@ export const Calendar: React.FC<CalendarProps> = ({ inputDate }: CalendarProps) 
       <CalendarHeader month={extractMonthName(formattedDate)} year={extractYear(formattedDate)} />
       <Weekdays />
       <div className="p-2 m-4 grid grid-cols-7">
-        {generateCalendarRows(formattedDate).map((d) => {
-          return <DateCell day={d} isHighlighted={d === formattedDate.getDate()} />;
+        {generateCalendarRows(formattedDate).map((d, ind) => {
+          return (
+            <DateCell
+              key={d ?? `empty-cell-${ind}`}
+              day={d}
+              isHighlighted={d === formattedDate.getDate()}
+            />
+          );
         })}
       </div>
     </>
